@@ -10,6 +10,7 @@ module.exports = {
     favicon: 'img/logo.png',
     organizationName: 'dogechain-lab',
     projectName: 'dogechain-docs',
+    
     themes: [
         [
           require.resolve("@easyops-cn/docusaurus-search-local"),
