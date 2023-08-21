@@ -2,12 +2,12 @@ require('dotenv').config()
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: 'Dogechain',
+    title: 'MINDCHAIN Docs',
     url: 'https://docs.dogechain.dog',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/logo.png',
+    favicon: 'https://i.postimg.cc/wTNbsthM/image.png',
     organizationName: 'dogechain-lab',
     projectName: 'dogechain-docs',
     
@@ -29,10 +29,10 @@ module.exports = {
         },
         navbar: {
             hideOnScroll: true,
-            title: 'Dogechain',
+            title: 'Mindchain',
             logo: {
-                alt: 'Dogechain Logo',
-                src: 'img/logo.png',
+                alt: 'Mindchain Logo',
+                src: 'https://i.postimg.cc/wTNbsthM/image.png',
                 href: 'docs/overview'
             },
             items: [
