@@ -5,6 +5,7 @@ module.exports = {
     title: 'MINDCHAIN Docs',
     url: 'https://docs.dogechain.dog',
     baseUrl: '/',
+
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'https://i.postimg.cc/wTNbsthM/image.png',
@@ -75,5 +76,6 @@ module.exports = {
                 }
             }
         ]
-    ]
+    ],
+   
 };
