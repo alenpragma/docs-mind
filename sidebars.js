@@ -32,6 +32,13 @@ module.exports = {
                 'working-with-node/backup-restore',
             ]
         },
+        {
+            type: 'category',
+            label: 'Become A validator',
+            items: [
+                'Become-A-valodator/Setup-validator-node'
+            ]
+        },
         // {
         //     type: 'category',
         //     label: 'Consensus',
