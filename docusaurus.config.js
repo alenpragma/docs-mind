@@ -43,12 +43,12 @@ module.exports = {
                     label: 'Developers',
                     position: 'left'
                 },
-                {
-                    to: 'docs/tokenomics/overview',
-                    activeBasePath: 'docs/',
-                    label: 'Tokenomics',
-                    position: 'left'
-                },
+                // {
+                //     to: 'docs/tokenomics/overview',
+                //     activeBasePath: 'docs/',
+                //     label: 'Tokenomics',
+                //     position: 'left'
+                // },
                 {
                     href: 'https://github.com/Mind-chain',
                     position: 'right',
