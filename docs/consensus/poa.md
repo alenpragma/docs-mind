@@ -23,7 +23,7 @@ If you need help setting up the the network refer to the [Local Setup](/docs/get
 In order to get up and running with IBFT on the new node, you first need to initialize the data folders and generate the keys:
 
 ````bash
-Mind-chainsecrets init --data-dir test-chain-5
+mind secrets init --data-dir test-chain-5
 ````
 
 This command will print the validator key (address) and the node ID. You will need the validator key (address) for the next step.
@@ -45,7 +45,7 @@ The structure of the IBFT commands is covered in the [CLI Commands](/docs/get-st
 Because in this example we are attempting to run the network where all nodes are on the same machine, we need to take care to avoid port conflicts. 
 
 ````bash
-Mind-chainserver --data-dir ./test-chain-5 --chain genesis.json --grpc :50000 --libp2p :50001 --jsonrpc :50002 --seal
+mind server  --data-dir ./test-chain-5 --chain genesis.json --grpc :50000 --libp2p :50001 --jsonrpc :50002 --seal
 ````
 
 After fetching all blocks, inside your console you will notice that a new node is participating in the validation

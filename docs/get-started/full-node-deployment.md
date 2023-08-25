@@ -204,7 +204,7 @@ MemoryHigh=5G
 MemoryLimit=6G
 
 WorkingDirectory=/var/lib/Mind-chain
-ExecStart=/usr/local/bin/Mind-chainserver \
+ExecStart=/usr/local/bin/mind server  \
     --data-dir=/data/Mind-chain\
     --chain=/etc/Mind-chain/genesis.json \
     --seal=false \

@@ -47,7 +47,7 @@ generated config file, which contains all the necessary information for secret s
 To generate the configuration, run the following command:
 
 ```bash
-Mind-chainsecrets generate --dir <PATH> --token <TOKEN> --server-url <SERVER_URL> --name <NODE_NAME>
+mind secrets generate --dir <PATH> --token <TOKEN> --server-url <SERVER_URL> --name <NODE_NAME>
 ```
 
 Parameters present:
@@ -71,7 +71,7 @@ Now that the configuration file is present, we can initialize the required secre
 file set up in step 1, using the `--config`:
 
 ```bash
-Mind-chainsecrets init --config <PATH>
+mind secrets init --config <PATH>
 ```
 
 The `PATH` param is the location of the previously generated secrets manager param from step 1.
@@ -83,7 +83,7 @@ and [**Cloud Setup**](/docs/get-started/set-up-ibft-on-the-cloud) guides, with m
 
 Since Hashicorp Vault is being used instead of the local file system, validator addresses should be added through the `--ibft-validator` flag:
 ```bash
-Mind-chaingenesis --ibft-validator <VALIDATOR_ADDRESS> ...
+mind genesis --ibft-validator <VALIDATOR_ADDRESS> ...
 ```
 
 ## Step 4 - Start the Mind-chainclient
@@ -93,7 +93,7 @@ Mind-chainwith the `server` command.
 
 The `server` command is used in the same manner as in the previously mentioned guides, with a minor addition - the `--secrets-config` flag:
 ```bash
-Mind-chainserver --secrets-config <PATH> ...
+mind server  --secrets-config <PATH> ...
 ```
 
 The `PATH` param is the location of the previously generated secrets manager param from step 1.

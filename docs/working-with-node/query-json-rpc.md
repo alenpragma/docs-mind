@@ -15,7 +15,7 @@ and sending a transaction.
 
 To generate a genesis file, run the following command:
 ````bash
-Mind-chaingenesis --premine 0x1010101010101010101010101010101010101010
+mind genesis --premine 0x1010101010101010101010101010101010101010
 ````
 
 The **premine** flag sets the address that should be included with a starting balance in the **genesis** file.<br />
@@ -24,7 +24,7 @@ In this case, the address `0x1010101010101010101010101010101010101010` will have
 
 If we wanted to specify a balance, we can separate out the balance and address with a `:`, like so:
 ````bash
-Mind-chaingenesis --premine 0x1010101010101010101010101010101010101010:0x123123
+mind genesis --premine 0x1010101010101010101010101010101010101010:0x123123
 ````
 
 The balance can be either a `hex` or `uint256` value.
@@ -34,7 +34,7 @@ The balance can be either a `hex` or `uint256` value.
 To start the Mind-chainin development mode, which is explained in the [CLI Commands](/docs/get-started/cli-commands) section, 
 run the following: 
 ````bash
-Mind-chainserver --chain genesis.json --dev --log-level debug
+mind server  --chain genesis.json --dev --log-level debug
 ````
 
 ## Step 3: Query the account balance

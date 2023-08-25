@@ -95,7 +95,7 @@ the Staking Smart Contract.
 Epoch lengths (in blocks) are modifiable when generating the genesis file, by using a special flag `--epoch-size`:
 
 ```bash
-Mind-chaingenesis --epoch-size 50 ...
+mind genesis --epoch-size 50 ...
 ```
 
 The default size of an epoch is `100000` blocks in the Mind-chain.

@@ -55,19 +55,19 @@ To get up and running with Mind-chain, you need to initialize the data folders, 
 
 
 ````bash
-node-1> Mind-chainsecrets init --data-dir data-dir
+node-1> mind secrets init --data-dir data-dir
 ````
 
 ````bash
-node-2> Mind-chainsecrets init --data-dir data-dir
+node-2> mind secrets init --data-dir data-dir
 ````
 
 ````bash
-node-3> Mind-chainsecrets init --data-dir data-dir
+node-3> mind secrets init --data-dir data-dir
 ````
 
 ````bash
-node-4> Mind-chainsecrets init --data-dir data-dir
+node-4> mind secrets init --data-dir data-dir
 ````
 
 Each of these commands will print the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need that information for the next step.
@@ -108,7 +108,7 @@ As the first part of the multiaddr connection string is the `<ip_address>`, here
 
 For the `<port>` we will use `1478`, since it is the default libp2p port.
 
-And lastly, we need the `<node_id>` which we can get from the output of the previously ran command `Mind-chainsecrets init --data-dir data-dir` command (which was used to generate keys and data directories for the `node 1`)
+And lastly, we need the `<node_id>` which we can get from the output of the previously ran command `mind secrets init --data-dir data-dir` command (which was used to generate keys and data directories for the `node 1`)
 
 After the assembly, the multiaddr connection string to the `node 1` which we will use as the bootnode will look something like this (only the `<node_id>` which is at the end should be different):
 ```
@@ -135,7 +135,7 @@ Node ID              = 16Uiu2HAmVZnsqvTwuzC9Jd4iycpdnHdyVZJZTpVC8QuRSKmZdUrf
 Given that you have received all 4 of the validators' public keys, you can run the following command to generate the `genesis.json`
 
 ````bash
-Mind-chaingenesis --consensus ibft --ibft-validator=0xC12bB5d97A35c6919aC77C709d55F6aa60436900 --ibft-validator=<2nd_validator_pubkey> --ibft-validator=<3rd_validator_pubkey> --ibft-validator=<4th_validator_pubkey> --bootnode=<first_bootnode_multiaddr_connection_string_from_step_2> --bootnode <second_bootnode_multiaddr_connection_string_from_step_2> --bootnode <optionally_more_bootnodes>
+mind genesis --consensus ibft --ibft-validator=0xC12bB5d97A35c6919aC77C709d55F6aa60436900 --ibft-validator=<2nd_validator_pubkey> --ibft-validator=<3rd_validator_pubkey> --ibft-validator=<4th_validator_pubkey> --bootnode=<first_bootnode_multiaddr_connection_string_from_step_2> --bootnode <second_bootnode_multiaddr_connection_string_from_step_2> --bootnode <optionally_more_bootnodes>
 ````
 
 What this command does:
@@ -328,25 +328,25 @@ To run the **first** client:
 
 
 ````bash
-node-1> Mind-chainserver --data-dir ./data-dir --chain genesis.json  --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
+node-1> mind server  --data-dir ./data-dir --chain genesis.json  --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
 ````
 
 To run the **second** client:
 
 ````bash
-node-2> Mind-chainserver --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
+node-2> mind server  --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
 ````
 
 To run the **third** client:
 
 ````bash
-node-3> Mind-chainserver --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
+node-3> mind server  --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
 ````
 
 To run the **fourth** client:
 
 ````bash
-node-4> Mind-chainserver --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
+node-4> mind server  --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat <public_or_private_ip> --seal
 ````
 
 After running the previous commands, you have set up a 4 node Mind-chain Network , capable of sealing blocks and recovering
@@ -357,12 +357,12 @@ from node failure.
 Instead of specifying all configuration parameters as CLI arguments, the Client can also be started using a config file by executing the following command: 
 
 ````bash 
-Mind-chainserver --config <config_file_path>
+mind server  --config <config_file_path>
 ````
 Example :
 
 ````bash
-Mind-chainserver --config ./test/config-node1.json
+mind server  --config ./test/config-node1.json
 ````
 Currently, we only support `json` based configuration file, sample config file can be found [here](/docs/sample-config)
 
@@ -373,12 +373,12 @@ Currently, we only support `json` based configuration file, sample config file c
 A Non-validator will always sync the latest blocks received from the validator node, you can start a non-validator node by running the following command.
 
 ````bash 
-Mind-chainserver --data-dir <directory_path> --chain <genesis_filename>  --libp2p <IPAddress:PortNo> --nat <public_or_private_ip>
+mind server  --data-dir <directory_path> --chain <genesis_filename>  --libp2p <IPAddress:PortNo> --nat <public_or_private_ip>
 ````
 For example, you can add **fifth** Non-validator client by executing the following command :
 
 ````bash
-Mind-chainserver --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat<public_or_private_ip>
+mind server  --data-dir ./data-dir --chain genesis.json --libp2p 0.0.0.0:1478 --nat<public_or_private_ip>
 ````
 :::
 
@@ -397,7 +397,7 @@ The default value for the price limit is `0`, meaning it is not enforced at all 
 
 Example of using the `--price-limit` flag:
 ````bash
-Mind-chainserver --price-limit 100000 ...
+mind server  --price-limit 100000 ...
 ````
 
 It is worth noting that price limits **are enforced only on non-local transactions**, meaning
