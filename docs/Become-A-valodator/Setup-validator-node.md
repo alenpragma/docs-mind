@@ -24,7 +24,7 @@ git clone https://github.com/Mind-chain/mindstaker
 cd mindstaker 
 npm i --f 
 ```
-`it will install the node dependencies`
+`it will install the node.js dependencies`
 
 ## setup the env vars using .env
 
