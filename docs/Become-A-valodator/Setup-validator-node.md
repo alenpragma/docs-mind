@@ -121,7 +121,7 @@ Current validators list [
 BLS Public Keys [ '0x', '0x', '0x', '0x', '0x', '0x' ]
 ```
 
-if your mind staked successfully you can check your address at validatorSet list 
+if your mind staked successfully you can see your address at validatorSet list 
 ```shell
 Current validators list [
   '0x394089c9A3fD81Ca5E0A9dbc9d1020DfB99C2605',
