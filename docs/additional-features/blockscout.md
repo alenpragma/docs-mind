@@ -101,7 +101,7 @@ Full list of variables that can be set you can find [here](https://docs.blocksco
 export  ETHEREUM_JSONRPC_HTTP_URL=<your polygon-edge json-rpc endpoint>
 # example: ETHEREUM_JSONRPC_TRACE_URL=https://testnet-msc.mindchain.info	
 export ETHEREUM_JSONRPC_TRACE_URL=<your polygon-edge json-rpc endpoint>
-# example: ETHEREUM_JSONRPC_WS_URL=wss://rpc.poa.psdk.io:8545/ws
+# example: ETHEREUM_JSONRPC_WS_URL=wss://testnet-msc.mindchain.info/ws
 export ETHEREUM_JSONRPC_WS_URL=<your polygon-edge websocket endpoint>
 # used for automaticaly restarting the service if it crashes
 export HEART_COMMAND="systemctl start explorer.service"
