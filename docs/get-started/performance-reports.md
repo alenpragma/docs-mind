@@ -2,7 +2,7 @@
 
 Our goal is to make a highly-performant, feature-rich and easy to setup and maintain blcokchain client software.
 
-All tests were done using the [Mind-chainLoadbot](../additional-features/stress-testing.md).
+All tests were done using the [mind loadbot ](../additional-features/stress-testing.md).
 
 Every performance report you will find on this page is properly dated, environment clearly described and the testing method clearly explained.
 

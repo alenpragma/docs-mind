@@ -12,7 +12,7 @@ This guide assumes that:
 
 ## Overview
 
-The Mind-chainLoadbot is a helper utility that is meant to stress test a Mind-chain Network .
+The mind loadbot  is a helper utility that is meant to stress test a Mind-chain Network .
 
 Currently, it supports 2 modes:
 
@@ -48,7 +48,7 @@ This section covers some basic terminology regarding the loadbot configuration.
 ### Transfer CASE
 As an example, here is a valid command you can use to run the loadbot using two premined accounts:
 ```bash
-Mind-chainloadbot --jsonrpc http://127.0.0.1:8545 --grpc-address 127.0.0.1:9632 --chain-id 568 --gas-price 100000000000 --sender 0x0Ea680527b44D598804c4a85C5d6695d2dd1Ef51 --receiver 0x7680d9649A1F09754e5Be58ed7d49554e82dAB03 --count 5000 --value 0x100 --tps 300
+mind loadbot  --jsonrpc http://127.0.0.1:8545 --grpc-address 127.0.0.1:9632 --chain-id 568 --gas-price 100000000000 --sender 0x0Ea680527b44D598804c4a85C5d6695d2dd1Ef51 --receiver 0x7680d9649A1F09754e5Be58ed7d49554e82dAB03 --count 5000 --value 0x100 --tps 300
 ```
 
 You should get a result similar to this on your terminal :
@@ -86,7 +86,7 @@ Block #3922 = 129 txns
 ### Deploy CASE
 As an example, here is a valid command you can use to run the loadbot using two premined accounts:
 ```bash
-Mind-chainloadbot --mode deploy ---jsonrpc http://127.0.0.1:8545 --grpc-address 127.0.0.1:9632 --chain-id 568 --gas-price 100000000000 --sender 0x0Ea680527b44D598804c4a85C5d6695d2dd1Ef51 --receiver 0x7680d9649A1F09754e5Be58ed7d49554e82dAB03 --count 200 --value 0x100 --tps 10
+mind loadbot  --mode deploy ---jsonrpc http://127.0.0.1:8545 --grpc-address 127.0.0.1:9632 --chain-id 568 --gas-price 100000000000 --sender 0x0Ea680527b44D598804c4a85C5d6695d2dd1Ef51 --receiver 0x7680d9649A1F09754e5Be58ed7d49554e82dAB03 --count 200 --value 0x100 --tps 10
 ```
 
 You should get a result similar to this on your terminal :

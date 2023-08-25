@@ -32,21 +32,21 @@ module.exports = {
                 'working-with-node/backup-restore',
             ]
         },
-        {
-            type: 'category',
-            label: 'Consensus',
-            items: [
-                'consensus/poa',
-                'consensus/pos-concepts',
-                'consensus/pos-stake-unstake',
-                'consensus/migration-to-pos'
-            ]
-        },
+        // {
+        //     type: 'category',
+        //     label: 'Consensus',
+        //     items: [
+        //         'consensus/poa',
+        //         'consensus/pos-concepts',
+        //         'consensus/pos-stake-unstake',
+        //         'consensus/migration-to-pos'
+        //     ]
+        // },
         {
             type: 'category',
             label: 'Additional features',
             items: [
-                'additional-features/dogecoin-bridge',
+              //  'additional-features/dogecoin-bridge',
                 'additional-features/blockscout',
                 'additional-features/stress-testing'
             ]
@@ -87,7 +87,7 @@ module.exports = {
             items: [
                 'community/propose-new-feature',
                 'community/report-bug',
-                'community/create-a-dog20-coin'
+                //'community/create-a-mind20-coin'
             ]
         },
     ]

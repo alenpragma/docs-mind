@@ -42,7 +42,7 @@ mind server  --chain genesis.json --dev --log-level debug
 Now that the client is up and running in dev mode, using the genesis file generated in **step 1**, we can use a tool like 
 **curl** to query the account balance:
 ````bash
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x1010101010101010101010101010101010101010", "latest"],"id":1}' https://rpc-testnet.Mind-chain.dog
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x1010101010101010101010101010101010101010", "latest"],"id":1}' https://testnet-msc.mindchain.info	
 ````
 
 The command should return the following output:
@@ -58,7 +58,7 @@ The command should return the following output:
 Now that we've confirmed the account we set up as premined has the correct balance, we can transfer some ether:
 
 ````bash
-Mind-chaintxpool add --nonce 0 --from 0x1010101010101010101010101010101010101010 --to 0x0000000000000000000000000000000000000010 --value 0x100
+mind txpool  	add --nonce 0 --from 0x1010101010101010101010101010101010101010 --to 0x0000000000000000000000000000000000000010 --value 0x100
 ````
 
 The **txpool add** command adds the transaction to the transaction pool.

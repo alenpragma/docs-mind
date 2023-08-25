@@ -50,7 +50,7 @@ module.exports = {
                     position: 'left'
                 },
                 {
-                    href: 'https://github.com/dogechain-lab/dogechain',
+                    href: 'https://github.com/Mind-chain',
                     position: 'right',
                     className: 'header-github-link',
                     'aria-label': 'GitHub repository',
@@ -59,7 +59,7 @@ module.exports = {
         },
         footer: {
             style: 'dark',
-            copyright: `Made with ❤ by the humans at <a href='https://trapesys.io'>Trapesys</a>`
+            copyright: `Made by mind mic`
         }
     },
     presets: [
