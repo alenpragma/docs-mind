@@ -6,7 +6,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-This section details the present commands, command flags in the dogechain, and how they're used.
+This section details the present commands, command flags in the Mind-chain, and how they're used.
 
 :::tip JSON output support
 
@@ -62,7 +62,7 @@ Sets the flag indicating that the client should seal blocks. Default: `false`.
   </TabItem>
 </Tabs>
 
-Used to specify the data directory used for storing Dogechain-Lab Dogechain client data. Default: `./dogechain-chain`.
+Used to specify the data directory used for storing Mind-chain Mind-chainclient data. Default: `./Mind-chain-chain`.
 
 ---
 
@@ -594,7 +594,7 @@ Sets minimum block time in seconds (at least `1` s). Default: `2`
   </TabItem>
   <TabItem value="example" label="Example">
 
-    server --access-control-allow-origins "https://dogechain-docs.doge.technology"
+    server --access-control-allow-origins "https://Mind-chain-docs.doge.technology"
 
   </TabItem>
 </Tabs>
@@ -633,7 +633,7 @@ Once the flag set, node would not use local secret files, but accept the private
   </TabItem>
   <TabItem value="example" label="Example">
 
-    server --log-to ./dogechain-testing.log
+    server --log-to ./Mind-chain-testing.log
 
   </TabItem>
 </Tabs>
@@ -867,7 +867,7 @@ Sets the address and port for the pprof service. Default address: `127.0.0.1:606
   </TabItem>
 </Tabs>
 
-Sets the directory for the dogechain genesis data. Default: `./genesis.json`.
+Sets the directory for the Mind-chaingenesis data. Default: `./genesis.json`.
 
 ---
 
@@ -886,7 +886,7 @@ Sets the directory for the dogechain genesis data. Default: `./genesis.json`.
   </TabItem>
 </Tabs>
 
-Sets the name for the chain. Default: `dogechain`.
+Sets the name for the chain. Default: `Mind-chain`.
 
 ---
 
@@ -1655,7 +1655,7 @@ Address of the gRPC API. Default: `127.0.0.1:9632`.
 | **Command** | **Description**                                                                                                                                      |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | secrets init      | Initializes the private keys to the corresponding secrets manager                                                         |
-| secrets generate         | Generates a secrets manager configuration file which can be parsed by the dogechain    |
+| secrets generate         | Generates a secrets manager configuration file which can be parsed by the Mind-chain   |
 
 ### secrets init flags
 
@@ -1693,7 +1693,7 @@ Sets the path to the SecretsManager config file. Used for Hashicorp Vault. If om
   </TabItem>
 </Tabs>
 
-Sets the directory for the dogechain data if the local FS is used.
+Sets the directory for the Mind-chaindata if the local FS is used.
 
 ### secrets generate flags
 
@@ -1788,7 +1788,7 @@ Specifies the server URL for the service
   </TabItem>
 </Tabs>
 
-Specifies the name of the node for on-service record keeping. Default: `dogechain-node`
+Specifies the name of the node for on-service record keeping. Default: `Mind-chain-node`
 
 ---
 
@@ -2186,7 +2186,7 @@ The beginning height of blocks in archive. Default: 0.
   </TabItem>
   <TabItem value="example" label="Example">
 
-    backup --overwrite-file ./dogechain-snapshot.zst
+    backup --overwrite-file ./Mind-chain-snapshot.zst
 
   </TabItem>
 </Tabs>

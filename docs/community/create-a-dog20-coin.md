@@ -1,6 +1,6 @@
 ## Process
 
-* Switch MetaMask network to Dogechain Mainnet, and switch your account for deploying.
+* Switch MetaMask network to Mind-chainMainnet, and switch your account for deploying.
 * Copy the code [below](#template-code), create a new file in [remix](https://remix.ethereum.org) contracts directory and paste it.
 * Choose Solidity Compiler version (0.5.16 or 0.5.17) and compile it.
 * Choose "Injected MetaMask" in "ENVIRONMENT" on page "Deploy & run transactions" to connect the wallet.

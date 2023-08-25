@@ -4,40 +4,34 @@ title: MINDCHAIN
 sidebar_label: Overview
 ---
 
-## Devnet
-* Explorer: https://explorer-devnet.dogechain.dog
-* ChainID:  668
-* Faucet:   https://devnet-faucet.dogechain.dog/
-* RPC Endpoints:
-    * https://rpc-devnet.dogechain.dog
-
-## Testnet(Deprecated)
-* Explorer: https://explorer-testnet.dogechain.dog
-* ChainID:  568
-* Faucet:   https://faucet.dogechain.dog
-* RPC Endpoints:
-    * https://rpc-testnet.dogechain.dog
-
 ## Mainnet
-* Explorer: https://explorer.dogechain.dog
-* ChainID:  2000
-* Bridge:   https://bridge.dogechain.dog
-* RPC Endpoints:
-    * https://rpc.dogechain.dog
-    * https://rpc-us.dogechain.dog
-    * https://rpc01.dogechain.dog
-* Ankr RPC Endpoints:
-    * https://rpc.ankr.com/dogechain
+* Explorer: https://mainnet.mindscan.info
+* ChainID:  9996
+* Bridge:   soon
+* HTTP RPC Endpoints:
+    * https://rpc-msc.mindchain.info	
+    * https://seednode.mindchain.info
+    
+* WS  RPC Endpoints:
+    * wss://seednode.mindchain.info/ws	
 
-Dogechain is built on Polygon Edge, which lets the project bootstrap a new blockchain network while providing full compatibility with Ethereum smart contracts and transactions. It uses IBFT (Istanbul Byzantine Fault Tolerant) consensus mechanism, supported [PoS (proof of stake)](/docs/consensus/pos-stake-unstake).
+## Testnet
+* Explorer: https://testnet.mindscan.info
+* ChainID:  9977
+* Faucet:   https://faucet.mindchain.info
+* HTTP RPC Endpoints:
+    * https://testnet-msc.mindchain.info	
+* WS RPC Endpoints:
+    * wss://testnet-msc.mindchain.info/ws
 
-Industry standard wallets can be used to interact with Dogechain through the [JSON-RPC](/docs/working-with-node/query-json-rpc) endpoints and node operators can perform various actions on the nodes through the [gRPC](/docs/working-with-node/query-operator-info) protocol.
-
-To find out more about dogechain-lab, visit the [official website](https://dogecoin.community).
-
-
-**[GitHub repository](https://github.com/dogechain-lab/dogechain)**
 
 
 
-To get started by running a `Dogechain` network locally, please read: [Installation](/docs/get-started/installation) and [Local Setup](/docs/get-started/set-up-ibft-locally).
+
+
+
+**[GitHub repository](https://github.com/Mind-chain/Mind-chain)**
+
+
+
+To get started by running a `Mind-chain` network locally, please read: [Installation](/docs/get-started/installation) and [Local Setup](/docs/get-started/set-up-ibft-locally).

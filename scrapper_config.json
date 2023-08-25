@@ -1,10 +1,10 @@
 {
-  "index_name": "docs.dogechain.dog",
+  "index_name": "docs.Mind-chain.dog",
   "start_urls": [
-    "https://docs.dogechain.dog"
+    "https://docs.Mind-chain.dog"
   ],
   "sitemap_urls": [
-    "https://docs.dogechain.dog/sitemap.xml"
+    "https://docs.Mind-chain.dog/sitemap.xml"
   ],
   "stop_urls": [],
   "sitemap_alternate_links": true,

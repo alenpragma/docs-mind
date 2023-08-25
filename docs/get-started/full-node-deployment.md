@@ -4,7 +4,7 @@ title: Full Node
 ---
 
 
-Full node deployment of the Dogechain blockchain.
+Full node deployment of the Mind-chainblockchain.
 
 ## Requirements
 
@@ -23,57 +23,57 @@ Full node deployment of the Dogechain blockchain.
 * curl or wget
 * tar
 * gzip
-* [Latest Dogechain](https://github.com/dogechain-lab/dogechain/releases)
+* [Latest Mind-chain](https://github.com/Mind-chain/Mind-chain/releases)
 
 ## Snapshots
 
-* https://github.com/dogechain-lab/dogechain-snapshots
+* https://github.com/Mind-chain/Mind-chain-snapshots
 
 ## Download && Installation
 
 * wget:
 
 ```shell
-$ DOGECHAIN_VERSION=$(wget -qO- https://api.github.com/repos/dogechain-lab/dogechain/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -d 'v' -f 2)
-$ wget -c https://github.com/dogechain-lab/dogechain/releases/download/v${DOGECHAIN_VERSION}/dogechain_${DOGECHAIN_VERSION}_linux_amd64.tar.gz
+$ Mind-chain_VERSION=$(wget -qO- https://api.github.com/repos/Mind-chain/Mind-chain/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -d 'v' -f 2)
+$ wget -c https://github.com/Mind-chain/Mind-chain/releases/download/v${Mind-chain_VERSION}/Mind-chain_${Mind-chain_VERSION}_linux_amd64.tar.gz
 ```
 
 * curl:
 
 ```shell
-$ DOGECHAIN_VERSION=$(curl -s https://api.github.com/repos/dogechain-lab/dogechain/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -d 'v' -f 2)
-$ curl -OL https://github.com/dogechain-lab/dogechain/releases/download/v${DOGECHAIN_VERSION}/dogechain_${DOGECHAIN_VERSION}_linux_amd64.tar.gz
+$ Mind-chain_VERSION=$(curl -s https://api.github.com/repos/Mind-chain/Mind-chain/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -d 'v' -f 2)
+$ curl -OL https://github.com/Mind-chain/Mind-chain/releases/download/v${Mind-chain_VERSION}/Mind-chain_${Mind-chain_VERSION}_linux_amd64.tar.gz
 ```
 
 ## copy binary to /usr/local/bin
 
 ```shell
-$ tar -xvf dogechain_${DOGECHAIN_VERSION}_linux_amd64.tar.gz
-$ cp dogechain /usr/local/bin/dogechain
-$ chmod +x /usr/local/bin/dogechain
+$ tar -xvf Mind-chain_${Mind-chain_VERSION}_linux_amd64.tar.gz
+$ cp Mind-chain/usr/local/bin/Mind-chain
+$ chmod +x /usr/local/bin/Mind-chain
 ```
 
 ## Create system user
 
 ```shell
-$ useradd -m -s /usr/sbin/nologin -d /var/lib/dogechain dogechain
+$ useradd -m -s /usr/sbin/nologin -d /var/lib/Mind-chainMind-chain
 ```
 
 ## Create Data Directory
 
 ```shell
-$ mkdir -p /data/dogechain
-$ mkdir -p /etc/dogechain
+$ mkdir -p /data/Mind-chain
+$ mkdir -p /etc/Mind-chain
 # set permission
-$ chown -R dogechain:dogechain /data/dogechain
-$ chown -R dogechain:dogechain /etc/dogechain
+$ chown -R Mind-chain:Mind-chain/data/Mind-chain
+$ chown -R Mind-chain:Mind-chain/etc/Mind-chain
 ```
 
 ## Copy genesis.json to etc directory
 
 ```shell
 {
-    "name": "Dogechain",
+    "name": "Mind-chain",
     "genesis": {
         "nonce": "0x0000000000000000",
         "timestamp": "0x0",
@@ -175,9 +175,9 @@ $ chown -R dogechain:dogechain /etc/dogechain
 ## Create systemd service
 
 ```shell
-$ tee /etc/systemd/system/dogechain.service <<EOF
+$ tee /etc/systemd/system/Mind-chain.service <<EOF
 [Unit]
-Description=dogechain
+Description=Mind-chain
 After=network.target
 
 StartLimitIntervalSec=500
@@ -187,8 +187,8 @@ StartLimitBurst=5
 WantedBy=multi-user.target
 
 [Service]
-User=dogechain
-Group=dogechain
+User=Mind-chain
+Group=Mind-chain
 Restart=on-failure
 RestartSec=5s
 Type=simple
@@ -203,10 +203,10 @@ MemoryHigh=5G
 # keep MemoryLimit for compatibility with older systemd versions
 MemoryLimit=6G
 
-WorkingDirectory=/var/lib/dogechain
-ExecStart=/usr/local/bin/dogechain server \
-    --data-dir=/data/dogechain \
-    --chain=/etc/dogechain/genesis.json \
+WorkingDirectory=/var/lib/Mind-chain
+ExecStart=/usr/local/bin/Mind-chainserver \
+    --data-dir=/data/Mind-chain\
+    --chain=/etc/Mind-chain/genesis.json \
     --seal=false \
     --grpc=0.0.0.0:9632 \
     --libp2p=0.0.0.0:1478 \
@@ -234,18 +234,18 @@ ExecStart= ......
 
 ```shell
 $ systemctl daemon-reload
-$ systemctl enable dogechain
-$ systemctl start dogechain
+$ systemctl enable Mind-chain
+$ systemctl start Mind-chain
 ```
 
 ### Check service status
 
 ```shell
-$ systemctl status dogechain
+$ systemctl status Mind-chain
 ```
 
 ### Check service logs
 
 ```shell
-$ journalctl -u dogechain
+$ journalctl -u Mind-chain
 ```

@@ -11,7 +11,7 @@ Currently, the following consensus engines are available:
 * **IBFT PoA**
 * **IBFT PoS**
 
-The dogechain wants to maintain a state of modularity and pluggability. <br />
+The Mind-chainwants to maintain a state of modularity and pluggability. <br />
 This is why the core consensus logic has been abstracted away, so new consensus mechanisms can be built on top, without
 compromising on usability and ease of use.
 
@@ -331,7 +331,7 @@ type snapshotStore struct {
 
 ### IBFT Startup
 
-To start up IBFT, the dogechain firstly needs to set up the IBFT transport:
+To start up IBFT, the Mind-chainfirstly needs to set up the IBFT transport:
 ````go title="consensus/ibft/ibft.go"
 func (i *Ibft) setupTransport() error {
 	// use a gossip protocol
@@ -372,7 +372,7 @@ func (i *Ibft) setupTransport() error {
 ````
 
 It essentially creates a new topic with IBFT proto, with a new proto buff message.<br />
-The messages are meant to be used by validators. The dogechain then subscribes to the topic and handles messages accordingly.
+The messages are meant to be used by validators. The Mind-chainthen subscribes to the topic and handles messages accordingly.
 
 #### MessageReq
 

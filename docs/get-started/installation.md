@@ -9,17 +9,17 @@ Our recommendation is to use the pre-built releases and verify the provided chec
 
 ## Pre-built releases
 
-Please refer to the [GitHub Releases](https://github.com/dogechain-lab/dogechain/releases) page for a list of releases.
+Please refer to the [GitHub Releases](https://github.com/Mind-chain/Mind-chain/releases) page for a list of releases.
 
-Dogechain comes with cross-compiled AMD64/ARM64 binaries for Darwin and Linux.
+Mind-chaincomes with cross-compiled AMD64/ARM64 binaries for Darwin and Linux.
 
 --- 
 
 ## Docker image
 
-Official Docker images are hosted under the [hub.docker.com registry](https://hub.docker.com/r/dogechainlab/dogechain).
+Official Docker images are hosted under the [hub.docker.com registry](https://hub.docker.com/r/Mind-chainlab/Mind-chain).
 
-`docker pull dogechainlab/dogechain:latest`
+`docker pull Mind-chainlab/Mind-chain:latest`
 
 ---
 
@@ -30,10 +30,10 @@ Prior to using `go install` make sure that you have Go `>=1.16` installed and pr
 The stable branch is `develop`.
 
 ```shell
-git clone https://github.com/dogechain-lab/dogechain.git
-cd dogechain/
-go build main.go -o dogechain
-sudo mv dogechain /usr/local/bin
+git clone https://github.com/Mind-chain/Mind-chain.git
+cd Mind-chain/
+go build main.go -o Mind-chain
+sudo mv Mind-chain/usr/local/bin
 ```
 
 ---
@@ -42,6 +42,6 @@ sudo mv dogechain /usr/local/bin
 
 Prior to using `go install` make sure that you have Go `>=1.16` installed and properly configured.
 
-`go install github.com/dogechain-lab/dogechain@dev`
+`go install github.com/Mind-chain/Mind-chain@dev`
 
 The binary will be available in your `GOBIN` environment variable, and will include the latest changes from the mainline `develop` branch.

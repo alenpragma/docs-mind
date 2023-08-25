@@ -2,7 +2,7 @@
 
 * Total supply: 200,000,000,000$DC 
 * token address:
-    * On Dogechain: [0x7B4328c127B85369D9f82ca0503B000D09CF9180](https://explorer.dogechain.dog/address/0x7B4328c127B85369D9f82ca0503B000D09CF9180)
+    * On Mind-chain: [0x7B4328c127B85369D9f82ca0503B000D09CF9180](https://explorer.Mind-chain.dog/address/0x7B4328c127B85369D9f82ca0503B000D09CF9180)
     * On Ethereum: [0x7B4328c127B85369D9f82ca0503B000D09CF9180](https://etherscan.io/address/0x7B4328c127B85369D9f82ca0503B000D09CF9180)
 
 ![DC Tokenomics_Afterburn](/img/gov/token-after-convert.png)
@@ -25,9 +25,9 @@
 
 ## Ecosystem DAO fund - `29%`
 
-  The Ecosystem DAO Fund is a community-governed incentive program designed to accelerate the development of the Dogechain ecosystem. The Ecosystem DAO Fund will be used to support the applications, companies, and proposals that drive the expansion of the Dogechain ecosystem.
+  The Ecosystem DAO Fund is a community-governed incentive program designed to accelerate the development of the Mind-chainecosystem. The Ecosystem DAO Fund will be used to support the applications, companies, and proposals that drive the expansion of the Mind-chainecosystem.
 
-  Dogechain’s community governance will be launched in *Q4, 2022* with `29%` of $DC total supply as the ecosystem DAO fund. `$veDC` will be launched as Dogechain’s governance token which can be obtained by locking $DC for extended periods of time. `$veDC` holders can vote on governance proposals and decide on how to spend the `29%` Ecosystem DAO Fund for a more prosperous Dogechain ecosystem.
+  Mind-chain’s community governance will be launched in *Q4, 2022* with `29%` of $DC total supply as the ecosystem DAO fund. `$veDC` will be launched as Mind-chain’s governance token which can be obtained by locking $DC for extended periods of time. `$veDC` holders can vote on governance proposals and decide on how to spend the `29%` Ecosystem DAO Fund for a more prosperous Mind-chainecosystem.
 
 ## Network Operations - `15%` [Dynamic Vesting]
 
@@ -35,13 +35,13 @@
 
 ## Community Airdrops - `12%`
 
-  `12%` of the $DC total supply will be airdropped to the Dogechain community. Among that, `3%` goes to Early Shibes and `9%` goes to Loyal Shibes.
+  `12%` of the $DC total supply will be airdropped to the Mind-chaincommunity. Among that, `3%` goes to Early Shibes and `9%` goes to Loyal Shibes.
 
 |                |                   **Early Shibes Airdrop**                   |               **Loyal Shibes Airdrop**               |
 | :------------: | :----------------------------------------------------------: | :--------------------------------------------------: |
 | **Percentage** |                             `3%`                             |                         `9%`                         |
 |  **Release**   |                     `15%` upfront on TGE                     |                         TBD                          |
-|    **Rule**    | Rewards shared among Dogechain ecosystem participants during the bridge launch till *5AM, Aug. 23rd, PDT* | Rules to be discussed & voted upon by the community. |
+|    **Rule**    | Rewards shared among Mind-chainecosystem participants during the bridge launch till *5AM, Aug. 23rd, PDT* | Rules to be discussed & voted upon by the community. |
 
 ### Early Shibes Airdrop - `3%`
 
@@ -54,7 +54,7 @@
 
 ### Loyal Shibes Airdrop - `9%`
 
-  The Loyal Shibes Airdrop has the goal to reward dedicated ecosystem participants that take part in activities on the Dogechain blockchain. 
+  The Loyal Shibes Airdrop has the goal to reward dedicated ecosystem participants that take part in activities on the Mind-chainblockchain. 
   Rules on how the Loyal Shibes Airdrop will be distributed will be discussed and voted upon by the community after the veDC DAO mechanism has been implemented. 
 
 ## Polygon Reserve - `1%` 
